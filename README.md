@@ -2,7 +2,7 @@
 
 ## Description
 
-This is a project in where I'm trying to use all the MORE modern libraries & concepts of Frontend Develpment to keeping me fresh & try some of new libraries that I didn't use before.
+This is a project in where I'm trying to use all the MORE modern libraries & concepts of Frontend Develpment to keeping me fresh & try some of new libraries that I didn't use before. From the whole design of the application made in lovable, to the use of all the libraries listed below:
 
 ### React 19.1
 
@@ -26,7 +26,7 @@ Creating sinergies with a lot of libraries & built-in components, this is the to
 
 #### Axios
 
-#### ViteJS
+#### ViteJS and Vitest
 
 #### Shadcn
 
