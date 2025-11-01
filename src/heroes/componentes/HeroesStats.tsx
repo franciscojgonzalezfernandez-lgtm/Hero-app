@@ -34,9 +34,10 @@ export const HeroesStats = () => {
         title="Favorites"
         body={favouritesCount}
         bodyClassName="text-2xl font-bold text-red-600"
-        description={`${
-          (favouritesCount / heroesSummary?.totalHeroes) * 100
-        }% of total`}
+        description={`${(
+          (favouritesCount / heroesSummary?.totalHeroes) *
+          100
+        ).toFixed(2)}% of total`}
       />
 
       <HeroStatCard

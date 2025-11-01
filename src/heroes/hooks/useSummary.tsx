@@ -6,5 +6,6 @@ export const useSummary = () => {
     queryKey: ["heroesSummary"],
     queryFn: () => getHeroesSummaryAction(),
     staleTime: 1000 * 60 * 5, // 5 Minutos
+    retry: false,
   });
 };

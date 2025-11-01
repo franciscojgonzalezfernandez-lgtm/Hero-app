@@ -31,7 +31,7 @@ export const CustomMenu = () => {
               "p-2 rounded-md"
             )}
           >
-            <Link to="/search">Búsqueda de personajes</Link>
+            <Link to="/search">Character search</Link>
           </NavigationMenuLink>
         </NavigationMenuItem>
       </NavigationMenuList>

@@ -12,6 +12,10 @@ Waiting for react 19.2 with the automatic collector and other features, I'm stil
 
 #### Hooks (useState, useEffect, useContext & Context Provider)
 
+#### Typescript
+
+One of the best discoverings of humanity. React works perfectly with Typescript, doing it more secure and making the development process more friendly.
+
 #### use API
 
 #### Tailwilnd

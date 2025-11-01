@@ -11,7 +11,7 @@ interface Options {
   universe?: string;
   category?: string;
   status?: Status;
-  strength: string;
+  strength?: string;
 }
 
 export const getHeroesBySearchAction = async ({
@@ -22,7 +22,7 @@ export const getHeroesBySearchAction = async ({
   status,
   strength,
 }: Options): Promise<Hero[]> => {
-  if (!name && !team && !universe && !category && !status) {
+  if (!name && !team && !universe && !category && !status && !strength) {
     return [];
   }
   const { data } = await heroApi.get<Hero[]>(`/search`, {

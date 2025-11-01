@@ -13,8 +13,8 @@ export const SearchPage = () => {
         ]}
       />
       <HeroHeader
-        title="Búsqueda de héroes"
-        description="Busca tu héroe favorito"
+        title="Character search"
+        description="Search for your favourite hero or villain"
       />
       <HeroesStats />
       {/* Filters & Search*/}

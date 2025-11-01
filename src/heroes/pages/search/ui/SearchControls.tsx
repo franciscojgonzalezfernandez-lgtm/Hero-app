@@ -10,7 +10,6 @@ import {
   Accordion,
   AccordionContent,
   AccordionItem,
-  AccordionTrigger,
 } from "@/components/ui/accordion";
 
 export const SearchControls = () => {
@@ -102,7 +101,9 @@ export const SearchControls = () => {
           <AccordionContent>
             <div className="bg-white rounded-lg p-6 mb-8 shadow-sm border">
               <div className="flex justify-between items-center mb-4">
-                <h3 className="text-lg font-semibold">Advanced Filters</h3>
+                <h3 className="text-lg font-semibold">
+                  Advanced Filters (in progress)
+                </h3>
                 <Button variant="ghost">Clear All</Button>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
@@ -142,20 +143,16 @@ export const SearchControls = () => {
                   onValueChange={changeStrenghtFilter}
                 />
               </div>
-              {/* Grid of results */}
-              {searchResponse && (
-                <HeroGrid heroes={searchResponse} className="py-10" />
-              )}
-
-              {searchResponse && searchResponse.length === 0 && (
-                <h2>
-                  No results in this search. Please change your search options.
-                </h2>
-              )}
             </div>
           </AccordionContent>
         </AccordionItem>
       </Accordion>
+      {/* Grid of results */}
+      {searchResponse && <HeroGrid heroes={searchResponse} className="py-10" />}
+
+      {searchResponse && searchResponse.length === 0 && (
+        <h2>No results in this search. Please change your search options.</h2>
+      )}
     </>
   );
 };
