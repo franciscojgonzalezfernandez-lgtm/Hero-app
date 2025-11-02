@@ -11,7 +11,7 @@ export const Pagination = ({ totalPages }: PaginationProps) => {
   /* const [actualPage, setActualPage] = useState<number>(1); */
   const [searchParams, setSearchParams] = useSearchParams();
   let queryPage = searchParams.get("page")
-    ? parseInt(searchParams.get("page"))
+    ? parseInt(searchParams.get("page") || "")
     : 1;
   if (isNaN(queryPage)) {
     queryPage = 1;
@@ -22,7 +22,7 @@ export const Pagination = ({ totalPages }: PaginationProps) => {
       return queryPage;
     }
     return 1;
-  }, [searchParams, queryPage, totalPages]);
+  }, [queryPage, totalPages]);
   return (
     <div className="flex items-center justify-center space-x-2">
       <Button
@@ -40,7 +40,7 @@ export const Pagination = ({ totalPages }: PaginationProps) => {
         Previous
       </Button>
 
-      {Array.from({ length: totalPages }).map((value, index) => {
+      {Array.from({ length: totalPages }).map((_, index) => {
         return (
           <Button
             onClick={() =>

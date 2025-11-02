@@ -1,4 +1,4 @@
-import { use, useContext, useEffect, useMemo } from "react";
+import { use, useEffect, useMemo } from "react";
 import { Heart } from "lucide-react";
 import { useSearchParams } from "react-router";
 
@@ -105,17 +105,17 @@ export const HomePage = () => {
             </TabsTrigger>
           </TabsList>
           <TabsContent value="all">
-            <HeroGrid heroes={heroesResponse?.heroes} />
+            <HeroGrid heroes={heroesResponse?.heroes || []} />
           </TabsContent>
           <TabsContent value="favorites">
-            <h1>Favoritos</h1>
+            <h1>Favorites</h1>
             <HeroGrid heroes={favourites} />
           </TabsContent>
           <TabsContent value="heroes">
-            <HeroGrid heroes={heroesResponse?.heroes} />
+            <HeroGrid heroes={heroesResponse?.heroes || []} />
           </TabsContent>
           <TabsContent value="villains">
-            <HeroGrid heroes={heroesResponse?.heroes} />
+            <HeroGrid heroes={heroesResponse?.heroes || []} />
           </TabsContent>
         </Tabs>
 

@@ -1,6 +1,5 @@
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { Children, type PropsWithChildren } from "react";
+import { type PropsWithChildren } from "react";
 
 /* export const iconType = Heart | Zap | Users | Trophy; */
 

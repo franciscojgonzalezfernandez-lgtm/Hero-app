@@ -1,5 +1,4 @@
 import { describe, expect, test } from "vitest";
-import { heroApi } from "../../api/hero.api";
 import { getHeroBySlugAction } from "../get-hero-by-slug.action";
 const BASE_URL = import.meta.env.VITE_API_URL;
 

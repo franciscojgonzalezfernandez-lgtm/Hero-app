@@ -40,7 +40,12 @@ const getHeroTypeClass = (type: string): string => {
   return "";
 };
 
-export const HeroGridCard = ({ hero }: Hero) => {
+interface HeroGridCardProps {
+  hero: Hero;
+  key: string;
+}
+
+export const HeroGridCard = ({ hero }: HeroGridCardProps) => {
   const {
     alias,
     category,

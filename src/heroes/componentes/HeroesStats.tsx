@@ -32,7 +32,7 @@ export const HeroesStats = () => {
       <HeroStatCard
         icon={<Heart className="h-4 w-4 text-muted-foreground" />}
         title="Favorites"
-        body={favouritesCount}
+        body={favouritesCount.toString()}
         bodyClassName="text-2xl font-bold text-red-600"
         description={`${(
           (favouritesCount / heroesSummary?.totalHeroes) *

@@ -1,5 +1,4 @@
 import { useQuery } from "@tanstack/react-query";
-import React from "react";
 import { getHeroesByPageAction } from "../actions/get-heroes-by-page.action";
 
 interface paginatedHeroesProps {

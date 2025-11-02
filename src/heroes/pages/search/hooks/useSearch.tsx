@@ -1,7 +1,4 @@
-import {
-  getHeroesBySearchAction,
-  type Status,
-} from "@/heroes/actions/get-heroes-by-search.action";
+import { getHeroesBySearchAction } from "@/heroes/actions/get-heroes-by-search.action";
 import { useQuery } from "@tanstack/react-query";
 import { useSearchParams } from "react-router";
 
@@ -11,7 +8,7 @@ export const useSearch = () => {
   const name = searchParams.get("name") || undefined;
   const team = searchParams.get("team") || undefined;
   const universe = searchParams.get("universe") || undefined;
-  const status: Status = searchParams.get("status") || undefined;
+  const status: string = searchParams.get("status") || "";
   const strength = searchParams.get("strength") || undefined;
 
   return useQuery({

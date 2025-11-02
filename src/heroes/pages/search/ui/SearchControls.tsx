@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { HeroGrid } from "@/heroes/componentes/HeroGrid";
 import { Search, Filter, SortAsc, Grid, Plus } from "lucide-react";
-import { useRef, type FormEvent } from "react";
+import { useRef } from "react";
 import { useSearchParams } from "react-router";
 import { useSearch } from "../hooks/useSearch";
 import { Slider } from "@/components/ui/slider";
@@ -21,7 +21,7 @@ export const SearchControls = () => {
 
   const { data: searchResponse } = useSearch();
 
-  const handlekeyDown = (event: KeyboardEvent) => {
+  const handlekeyDown = (event: React.KeyboardEvent) => {
     if (event.key === "Enter") {
       setSearchParams((prev) => {
         console.log({ inputRef });

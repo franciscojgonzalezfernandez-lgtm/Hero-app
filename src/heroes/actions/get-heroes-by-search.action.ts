@@ -3,14 +3,12 @@ import type { Hero } from "../types/hero.interface";
 
 const BASE_URL = import.meta.env.VITE_API_URL;
 
-export type Status = "Active" | "No active" | undefined;
-
 interface Options {
   name?: string;
   team?: string;
   universe?: string;
   category?: string;
-  status?: Status;
+  status?: string;
   strength?: string;
 }
 
