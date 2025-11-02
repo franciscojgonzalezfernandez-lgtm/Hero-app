@@ -232,7 +232,7 @@ export const HeroPage = () => {
             {/* Power Comparison Chart */}
             <Card>
               <CardHeader>
-                <CardTitle>Comparación de Habilidades</CardTitle>
+                <CardTitle>Skills resume</CardTitle>
               </CardHeader>
               <CardContent>
                 <div className="space-y-4">
@@ -294,7 +294,7 @@ export const HeroPage = () => {
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
                   <Zap className="w-6 h-6 text-yellow-500" />
-                  Superpoderes
+                  Super Powers
                 </CardTitle>
               </CardHeader>
               <CardContent>
@@ -324,7 +324,7 @@ export const HeroPage = () => {
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
                   <Users className="w-6 h-6 text-green-500" />
-                  Afiliación de Equipo
+                  Team affiliation
                 </CardTitle>
               </CardHeader>
               <CardContent>
@@ -336,7 +336,7 @@ export const HeroPage = () => {
                     {superheroData.team}
                   </h3>
                   <p className="text-gray-600">
-                    Miembro activo del equipo de superhéroes más poderoso
+                    Active member of the most powerful team.
                   </p>
                 </div>
               </CardContent>
@@ -351,7 +351,7 @@ export const HeroPage = () => {
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <div className="flex justify-between items-center py-2 border-b">
-                    <span className="text-gray-600">Nombre Real:</span>
+                    <span className="text-gray-600">Real name:</span>
                     <span className="font-semibold">{superheroData.name}</span>
                   </div>
                   <div className="flex justify-between items-center py-2 border-b">
@@ -359,7 +359,7 @@ export const HeroPage = () => {
                     <span className="font-semibold">{superheroData.alias}</span>
                   </div>
                   <div className="flex justify-between items-center py-2 border-b">
-                    <span className="text-gray-600">Categoría:</span>
+                    <span className="text-gray-600">Category:</span>
                     <Badge
                       className={`${getCategoryColor(
                         superheroData.category
@@ -369,7 +369,7 @@ export const HeroPage = () => {
                     </Badge>
                   </div>
                   <div className="flex justify-between items-center py-2">
-                    <span className="text-gray-600">Estado:</span>
+                    <span className="text-gray-600">Status:</span>
                     <Badge
                       className={`${getStatusColor(
                         superheroData.status
@@ -383,23 +383,23 @@ export const HeroPage = () => {
 
               <Card>
                 <CardHeader>
-                  <CardTitle>Información del Universo</CardTitle>
+                  <CardTitle>Universe information</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <div className="flex justify-between items-center py-2 border-b">
-                    <span className="text-gray-600">Universo:</span>
+                    <span className="text-gray-600">Universe:</span>
                     <span className="font-semibold">
                       {superheroData.universe}
                     </span>
                   </div>
                   <div className="flex justify-between items-center py-2 border-b">
-                    <span className="text-gray-600">Primera Aparición:</span>
+                    <span className="text-gray-600">First appeared:</span>
                     <span className="font-semibold">
                       {superheroData.firstAppearance}
                     </span>
                   </div>
                   <div className="flex justify-between items-center py-2">
-                    <span className="text-gray-600">Años Activo:</span>
+                    <span className="text-gray-600">Active Years:</span>
                     <span className="font-semibold">
                       {new Date().getFullYear() -
                         Number.parseInt(superheroData.firstAppearance)}{" "}
