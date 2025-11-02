@@ -1,3 +1,5 @@
+import { Navigate } from "react-router";
+
 export const AdminPage = () => {
-  return <div>AdminPage</div>;
+  return <Navigate to="/" />;
 };
