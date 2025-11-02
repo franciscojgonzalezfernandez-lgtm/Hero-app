@@ -10,7 +10,12 @@ export const HeroesStats = () => {
   const { favouritesCount } = use(FavouriteHeroContext);
 
   if (!heroesSummary) {
-    return <div>Loading...</div>;
+    return (
+      <div>
+        Loading... the APIs information could take 50 seconds at first because
+        they're hosted in a free hosting tool.
+      </div>
+    );
   }
 
   return (
